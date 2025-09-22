@@ -1,0 +1,4 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial}
+img{background:#f1f5f9;border-radius:12px;object-fit:cover}
+.card,.panel,.box{border:1px solid #e2e8f0;border-radius:14px;box-shadow:0 10px 30px rgba(2,8,23,.08)}
