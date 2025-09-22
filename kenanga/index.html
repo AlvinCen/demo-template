@@ -1,8 +1,97 @@
-﻿<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Kenanga – eCommerce</title>
-<body style="font-family:system-ui;background:#0b1220;color:#e5e7eb;display:grid;place-items:center;min-height:100vh">
-<div style="max-width:720px;background:#0f172a;border:1px solid #1e293b;border-radius:14px;padding:24px">
-<h1 style="margin:0 0 8px">Kenanga – eCommerce</h1>
-<p>This is a placeholder. Drop your template files here so that <code>index.html</code> becomes the real demo.</p>
-<p>Back to <a href="../" style="color:#22d3ee">portal</a>.</p>
-</div></body>
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Kenanga – Ecommerce Shop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Fraunces:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css"/></head><body>
+<header class="header"><div class="container wrap">
+  <div class="brand">Kenanga</div>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="faq.html">FAQ</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <button class="iconbtn" data-theme-toggle title="Toggle theme">🌓</button>
+    <a class="btn" href="cart.html">Cart (<span data-cart-count>0</span>)</a>
+  </nav>
+</div></header>
+
+<main class="container">
+  <section class="hero">
+    <div>
+      <div class="badge">New Collection</div>
+      <h1>Elevate your everyday.</h1>
+      <p>Beautiful essentials for modern living. Crafted for comfort, built to last.</p>
+      <div style="display:flex; gap:10px; margin-top:12px">
+        <a class="btn" href="shop.html">Shop Now</a>
+        <a class="btn outline" href="shop.html">View All</a>
+      </div>
+    </div>
+    <img src="assets/img/placeholder/1600x600.svg" alt="Hero banner"/>
+  </section>
+
+  <section class="section">
+    <h2 style="margin:0 0 10px">Featured</h2>
+    <div class="grid cols-4">
+      <article class="card product">
+        <img class="thumb" src="assets/img/placeholder/600x600.svg" alt=""/>
+        <div class="body">
+          <div class="meta"><span class="stars">★★★★★</span><span>124</span></div>
+          <div class="title">Everyday Tee</div>
+          <div><span class="price">$19.00</span></div>
+          <div class="actions">
+            <button class="btn" data-add='{"id":"p1","name":"Everyday Tee","price":19,"image":"assets/img/placeholder/600x600.svg"}'>Add to Cart</button>
+            <a class="btn ghost" href="product.html?id=p1">Details</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card product">
+        <img class="thumb" src="assets/img/placeholder/600x600.svg" alt=""/>
+        <div class="body">
+          <div class="meta"><span class="stars">★★★★☆</span><span>82</span></div>
+          <div class="title">Linen Shirt</div>
+          <div><span class="price">$39.00</span> <span class="strike">$49.00</span></div>
+          <div class="actions">
+            <button class="btn" data-add='{"id":"p2","name":"Linen Shirt","price":39,"image":"assets/img/placeholder/600x600.svg"}'>Add to Cart</button>
+            <a class="btn ghost" href="product.html?id=p2">Details</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card product">
+        <img class="thumb" src="assets/img/placeholder/600x600.svg" alt=""/>
+        <div class="body">
+          <div class="meta"><span class="stars">★★★★★</span><span>201</span></div>
+          <div class="title">Canvas Tote</div>
+          <div><span class="price">$24.00</span></div>
+          <div class="actions">
+            <button class="btn" data-add='{"id":"p3","name":"Canvas Tote","price":24,"image":"assets/img/placeholder/600x600.svg"}'>Add to Cart</button>
+            <a class="btn ghost" href="product.html?id=p3">Details</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card product">
+        <img class="thumb" src="assets/img/placeholder/600x600.svg" alt=""/>
+        <div class="body">
+          <div class="meta"><span class="stars">★★★★☆</span><span>67</span></div>
+          <div class="title">Minimal Sneakers</div>
+          <div><span class="price">$79.00</span></div>
+          <div class="actions">
+            <button class="btn" data-add='{"id":"p4","name":"Minimal Sneakers","price":79,"image":"assets/img/placeholder/600x600.svg"}'>Add to Cart</button>
+            <a class="btn ghost" href="product.html?id=p4">Details</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+<footer class="footer"><div class="container">
+  <div>© 2025 Kenanga – Exclusive HTML Template for ThemeForest. · <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a></div>
+</div></footer>
+<script src="assets/js/main.js"></script>
+</body></html>

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>TripNest – 404</title>
+<title>TripNest – Travel & Hotel Booking</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
@@ -21,7 +21,31 @@
     <button class="btn ghost" data-theme-toggle title="Toggle theme">🌓</button>
   </nav>
 </div></header>
-<main class='container section' style='text-align:center; padding:80px 0'><h1>404</h1><p>Page not found.</p><a class='btn' href='index.html'>Back to Home</a></main><footer class="footer"><div class="container">
+
+<main class="container">
+  <section class="hero">
+    <div>
+      <div class="badge">Hotels • Villas • City stays</div>
+      <h1>Book stays you’ll love—at prices you like.</h1>
+      <p>Search by city & date, compare options, add to cart, and checkout (demo).</p>
+      <form data-search style="display:grid; grid-template-columns:repeat(5,1fr); gap:8px; margin-top:12px">
+        <input class="input" name="city" list="cities" placeholder="City (e.g., Bali)" required/>
+        <datalist id="cities"><option>Bali</option><option>Jakarta</option><option>Bandung</option><option>Yogyakarta</option><option>Surabaya</option><option>Lombok</option></datalist>
+        <input class="input" type="date" name="checkin" required/>
+        <input class="input" type="date" name="checkout" required/>
+        <input class="input" type="number" name="guests" min="1" value="2" placeholder="Guests"/>
+        <button class="btn" type="submit">Search</button>
+      </form>
+    </div>
+    <img src="assets/img/placeholder/1600x700.svg" alt="Hero"/>
+  </section>
+
+  <section class="section">
+    <h2>Popular</h2>
+    <div class="grid cols-3" data-hotels></div>
+  </section>
+</main>
+<footer class="footer"><div class="container">
   <div>© 2025 TripNest – Travel & Hotel Booking HTML Template. · <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a></div>
 </div></footer>
 <script src="assets/js/main.js"></script>

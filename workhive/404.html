@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>WorkHive – 404</title>
+<title>WorkHive – Job Board & Hiring</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
@@ -23,7 +23,29 @@
     <button class="btn ghost" data-theme-toggle title="Toggle theme">🌓</button>
   </nav>
 </div></header>
-<main class='container section' style='text-align:center; padding:80px 0'><h1>404</h1><p>Page not found.</p><a class='btn' href='index.html'>Back to Home</a></main><footer class="footer"><div class="container">
+
+<main class="container">
+  <section class="hero">
+    <div>
+      <div class="badge">Find jobs • Hire talents</div>
+      <h1>Land your next dream job.</h1>
+      <p>Thousands of tech & non-tech roles updated daily.</p>
+      <form class="searchbar" data-filter>
+        <input class="input" name="q" placeholder="Job title or company"/>
+        <input class="input" name="loc" placeholder="Location"/>
+        <select class="input" name="type"><option value="">Any type</option><option>Full-time</option><option>Part-time</option><option>Remote</option></select>
+        <a class="btn" href="jobs.html">Search</a>
+      </form>
+    </div>
+    <img src="assets/img/placeholder/1600x700.svg" alt="Hero"/>
+  </section>
+
+  <section class="section">
+    <h2>Featured Jobs</h2>
+    <div class="grid cols-3" data-jobs></div>
+  </section>
+</main>
+<footer class="footer"><div class="container">
   <div>© 2025 WorkHive – Job Board & Hiring HTML Template. · <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a></div>
 </div></footer>
 <script src="assets/js/main.js"></script>

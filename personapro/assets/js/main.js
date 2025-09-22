@@ -1,0 +1,1 @@
+(function(){document.addEventListener('submit',e=>{const f=e.target.closest('[data-ajax]');if(!f)return;e.preventDefault();alert('Thanks! (Demo)');});})();
