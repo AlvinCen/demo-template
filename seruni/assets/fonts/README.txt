@@ -1,0 +1,1 @@
+Use Google Fonts: Lora (serif) & Inter (sans). Self-host if reviewer requests. No font files included.

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Ledgerly – Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css"/></head><body>
+<header class="header"><div class="container wrap">
+  <div class="brand">Ledgerly</div>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="transactions.html">Transactions</a>
+    <a href="budgets.html">Budgets</a>
+    <a href="reports.html">Reports</a>
+    <a href="accounts.html">Accounts</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+    <a class="btn ghost" href="login.html">Login</a>
+    <a class="btn" href="signup.html">Sign up</a>
+    <button class="btn ghost" data-theme-toggle title="Toggle theme">🌓</button>
+  </nav>
+</div></header>
+
+<main class="container section">
+  <h1 style="font-family:var(--display)">Dashboard</h1>
+  <div class="grid cols-3" style="margin-top:12px">
+    <div class="card"><div class="body kpi"><div><div class="badge">Balance</div><div style="font-size:28px;font-weight:900" data-balance>$0.00</div></div><div id="donut" data-donut></div></div></div>
+    <div class="card"><div class="body kpi"><div><div class="badge">Income</div><div style="font-size:28px;font-weight:900" data-income>$0.00</div></div><span>Month to date</span></div></div>
+    <div class="card"><div class="body kpi"><div><div class="badge">Expense</div><div style="font-size:28px;font-weight:900" data-expense>$0.00</div></div><span>Month to date</span></div></div>
+  </div>
+
+  <div class="grid cols-2" style="margin-top:16px">
+    <section class="card"><div class="body"><h3>Recent Transactions</h3>
+      <table class="table"><thead><tr><th>Date</th><th>Category</th><th>Note</th><th style="text-align:right">Amount</th></tr></thead><tbody data-recent></tbody></table>
+    </div></section>
+    <section class="card"><div class="body"><h3>Budgets (This Month)</h3>
+      <table class="table">
+        <thead><tr><th>Category</th><th>Limit</th><th>Spent</th><th>Progress</th></tr></thead>
+        <tbody data-budgets></tbody>
+      </table>
+    </div></section>
+  </div>
+</main>
+<footer class="footer"><div class="container">
+  <div>© 2025 Ledgerly – Personal Finance & Budgeting HTML Template. · <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a></div>
+</div></footer>
+<script src="assets/js/main.js"></script>
+</body></html>

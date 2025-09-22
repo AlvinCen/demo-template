@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TripNest – Hotels</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css"/></head><body>
+<header class="header"><div class="container wrap">
+  <div class="brand">TripNest</div>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="hotels.html">Hotels</a>
+    <a href="wishlist.html">Wishlist</a>
+    <a href="cart.html">Cart</a>
+    <a href="orders.html">Orders</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+    <a class="btn ghost" href="login.html">Login</a>
+    <a class="btn" href="signup.html">Sign up</a>
+    <button class="btn ghost" data-theme-toggle title="Toggle theme">🌓</button>
+  </nav>
+</div></header>
+
+<main class="container section">
+  <h1>Hotels</h1>
+  <form data-filters style="display:grid; grid-template-columns:repeat(7,1fr); gap:8px; margin:10px 0">
+    <input class="input" name="q" placeholder="Search hotel name"/>
+    <select class="input" name="city"><option value="">All cities</option><option>Bali</option><option>Jakarta</option><option>Bandung</option><option>Yogyakarta</option><option>Surabaya</option><option>Lombok</option></select>
+    <input class="input" type="date" name="checkin"/>
+    <input class="input" type="date" name="checkout"/>
+    <input class="input" type="number" name="guests" min="1" placeholder="Guests"/>
+    <input class="input" type="number" name="min" placeholder="Min price"/>
+    <input class="input" type="number" name="max" placeholder="Max price"/>
+    <select class="input" name="rating"><option value="">Any rating</option><option value="3">3★+</option><option value="4">4★+</option><option value="4.5">4.5★+</option></select>
+  </form>
+  <div class="grid cols-3" data-hotels></div>
+</main>
+<footer class="footer"><div class="container">
+  <div>© 2025 TripNest – Travel & Hotel Booking HTML Template. · <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a></div>
+</div></footer>
+<script src="assets/js/main.js"></script>
+</body></html>

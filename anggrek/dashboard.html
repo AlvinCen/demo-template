@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Anggrek – Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Figtree:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css"/></head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="brand"><span class="logo"></span> Anggrek</div>
+    <nav class="nav"><a href="dashboard.html" class="active"><span>▣</span><span>Dashboard</span></a><a href="analytics.html" class=""><span>▣</span><span>Analytics</span></a><a href="tables.html" class=""><span>▣</span><span>Tables</span></a><a href="users.html" class=""><span>▣</span><span>Users</span></a><a href="forms.html" class=""><span>▣</span><span>Forms</span></a><a href="components.html" class=""><span>▣</span><span>Components</span></a><a href="kanban.html" class=""><span>▣</span><span>Kanban</span></a><a href="settings.html" class=""><span>▣</span><span>Settings</span></a></nav>
+  </aside>
+  <div>
+    <header class="topbar">
+      <div class="wrap">
+        <button class="btn ghost" data-sidebar-toggle>☰</button>
+        <div class="search"><span>🔎</span><input placeholder="Search..."/></div>
+        <div class="actions">
+          <button class="btn ghost" data-theme-toggle>🌓</button>
+          <span class="badge">v1.0.0</span>
+          <img src="assets/img/placeholder/128x128.svg" alt="" style="width:32px;height:32px;border-radius:50%;border:1px solid var(--border)"/>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+
+  <div class="grid cols-4">
+    <div class="card kpi"><div><div class="badge">Revenue</div><div class="num">$32,450</div></div><div class="delta up">+12%</div></div>
+    <div class="card kpi"><div><div class="badge">Orders</div><div class="num">1,204</div></div><div class="delta up">+5%</div></div>
+    <div class="card kpi"><div><div class="badge">Users</div><div class="num">8,329</div></div><div class="delta down">-1.2%</div></div>
+    <div class="card kpi"><div><div class="badge">Bounce</div><div class="num">36%</div></div><div class="delta up">+2%</div></div>
+  </div>
+
+  <div class="grid cols-2" style="margin-top:16px">
+    <div class="card">
+      <h3>Traffic</h3>
+      <div data-spark="[12,18,14,22,19,25,31,28,35,33,37,40]"></div>
+    </div>
+    <div class="card">
+      <h3>Conversions</h3>
+      <div data-bars="[5,8,6,10,9,12,15,11,13,14,16,18]"></div>
+    </div>
+  </div>
+
+  <div class="grid cols-3" style="margin-top:16px">
+    <div class="card"><h3>Uptime</h3><div class="donut" data-donut="99.8"></div></div>
+    <div class="card"><h3>NPS</h3><div class="donut" data-donut="72"></div></div>
+    <div class="card"><h3>Roadmap</h3><div class="progress"><span style="width:58%"></span></div></div>
+  </div>
+
+  <div class="card" style="margin-top:16px">
+    <h3>Recent Orders</h3>
+    <div style="display:flex; align-items:center; gap:8px; margin:8px 0">
+      <input class="input" placeholder="Filter..." data-table-search/>
+      <button class="btn" onclick="showToast('Exported CSV')">Export</button>
+      <button class="btn ghost" data-open-modal>Open modal</button>
+    </div>
+    <table class="table">
+      <thead><tr><th>Order ID</th><th>Customer</th><th>Item</th><th>Total</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>#10231</td><td>Jane Cooper</td><td class="truncate">Pro Plan – Annual</td><td>$199.00</td><td><span class="badge">Paid</span></td></tr>
+        <tr><td>#10230</td><td>Wade Warren</td><td class="truncate">Team Seats (5)</td><td>$49.00</td><td><span class="badge">Pending</span></td></tr>
+        <tr><td>#10229</td><td>Jenny Wilson</td><td class="truncate">Add-on: SSO</td><td>$29.00</td><td><span class="badge">Paid</span></td></tr>
+        <tr><td>#10228</td><td>Guy Hawkins</td><td class="truncate">Pro Plan – Monthly</td><td>$19.00</td><td><span class="badge">Refunded</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+    </main>
+  </div>
+</div>
+<div class="modal"><div class="dialog">
+  <h3>Quick modal</h3>
+  <p>This is a demo modal. Click outside to close.</p>
+  <div style="display:flex; gap:8px; justify-content:flex-end">
+    <button class="btn ghost" onclick="document.querySelector('.modal').classList.remove('open')">Cancel</button>
+    <button class="btn primary" onclick="document.querySelector('.modal').classList.remove('open')">Confirm</button>
+  </div>
+</div></div>
+<script src="assets/js/main.js"></script>
+</body></html>

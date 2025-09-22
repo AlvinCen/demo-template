@@ -1,0 +1,54 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LaunchKit – SaaS & Startup Landing</title><link rel="stylesheet" href="assets/css/style.css"/></head><body>
+<header class="header"><div class="container wrap"><div class="brand">LaunchKit</div>
+<nav class="nav"><a href="index.html">Home</a><a href="features.html">Features</a><a href="integrations.html">Integrations</a><a href="pricing.html">Pricing</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a><a href="login.html" class="btn ghost">Log in</a><a href="signup.html" class="btn">Sign up</a><button class="btn ghost" data-theme-toggle>🌓</button></nav></div></header>
+<main class="container">
+  <section class="hero">
+    <div>
+      <div class="badge">SaaS • Startup</div>
+      <h1>Ship faster. Scale smarter.</h1>
+      <p>All‑in‑one toolkit to launch, grow, and serve customers.</p>
+      <div style="display:flex; gap:10px; margin-top:12px"><a class="btn" href="signup.html">Start free</a><a class="btn ghost" href="features.html">See features</a></div>
+    </div>
+    <img src="assets/img/placeholder/1600x800.svg" alt="App preview"/>
+  </section>
+  <section class="section">
+    <h2>Why LaunchKit</h2>
+    <div class="grid cols-3">
+      <div class="card"><div class="body"><strong>API-first</strong><p>Clean REST API with SDKs.</p></div></div>
+      <div class="card"><div class="body"><strong>Scalable</strong><p>Millions of events/day.</p></div></div>
+      <div class="card"><div class="body"><strong>Secure</strong><p>RBAC & audit logs.</p></div></div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="tabs"><div class="tab active">JavaScript</div><div class="tab">Python</div><div class="tab">cURL</div></div>
+    <div>
+      <div class="tabpanel active"><pre class="code">import LaunchKit from 'launchkit';
+const lk = new LaunchKit('pk_live_xxx');
+await lk.customers.create({ name: 'Ada' });</pre></div>
+      <div class="tabpanel"><pre class="code">from launchkit import Client
+lk = Client('pk_live_xxx')
+lk.customers.create({ 'name': 'Ada' })</pre></div>
+      <div class="tabpanel"><pre class="code">curl -X POST https://api.launchkit.dev/customers \
+  -H "Authorization: Bearer pk_live_xxx" \
+  -d 'name=Ada'</pre></div>
+    </div>
+  </section>
+  <section class="section">
+    <h2>What customers say</h2>
+    <div class="slider"><div class="slides"><div class="slide"><p>“LaunchKit cut our time‑to‑ship in half.”</p><div class="badge">— CEO, Fastship</div></div><div class="slide"><p>“Clean API and docs. Love it.”</p><div class="badge">— Eng Lead, North</div></div><div class="slide"><p>“Scaled to millions without drama.”</p><div class="badge">— CTO, ScaleCloud</div></div></div></div>
+    <div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+  </section>
+  <section class="section">
+    <div style="display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap">
+      <h2>Pricing</h2>
+      <div class="toggle" data-toggle><button data-mode="monthly" class="active">Monthly</button><button data-mode="yearly">Yearly <span class="badge" style="margin-left:6px">Save 20%</span></button></div>
+    </div>
+    <div class="pricing" style="margin-top:12px">
+      <div class="pricecard"><div class="badge">Starter</div><div class="price" data-price data-monthly="$0" data-yearly="$0">$0</div><ul><li>1k events/mo</li><li>Community support</li></ul><a class="btn" href="signup.html">Get started</a></div>
+      <div class="pricecard"><div class="badge">Pro</div><div class="price" data-price data-monthly="$29" data-yearly="$24/mo">$29</div><ul><li>100k events/mo</li><li>Email support</li></ul><a class="btn" href="signup.html">Try Pro</a></div>
+      <div class="pricecard"><div class="badge">Scale</div><div class="price" data-price data-monthly="$99" data-yearly="$79/mo">$99</div><ul><li>1M events/mo</li><li>Priority support</li></ul><a class="btn" href="contact.html">Contact sales</a></div>
+    </div>
+  </section>
+</main><footer class="footer"><div class="container">© 2025 LaunchKit · <a href="faq.html">FAQ</a> · <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a></div></footer>
+<script src="assets/js/main.js"></script></body></html>

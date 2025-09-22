@@ -1,0 +1,1 @@
+Use Google Fonts: Inter & Outfit. Self-host if reviewer requests.

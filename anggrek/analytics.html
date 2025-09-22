@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Anggrek – Analytics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Figtree:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css"/></head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="brand"><span class="logo"></span> Anggrek</div>
+    <nav class="nav"><a href="dashboard.html" class=""><span>▣</span><span>Dashboard</span></a><a href="analytics.html" class="active"><span>▣</span><span>Analytics</span></a><a href="tables.html" class=""><span>▣</span><span>Tables</span></a><a href="users.html" class=""><span>▣</span><span>Users</span></a><a href="forms.html" class=""><span>▣</span><span>Forms</span></a><a href="components.html" class=""><span>▣</span><span>Components</span></a><a href="kanban.html" class=""><span>▣</span><span>Kanban</span></a><a href="settings.html" class=""><span>▣</span><span>Settings</span></a></nav>
+  </aside>
+  <div>
+    <header class="topbar">
+      <div class="wrap">
+        <button class="btn ghost" data-sidebar-toggle>☰</button>
+        <div class="search"><span>🔎</span><input placeholder="Search..."/></div>
+        <div class="actions">
+          <button class="btn ghost" data-theme-toggle>🌓</button>
+          <span class="badge">v1.0.0</span>
+          <img src="assets/img/placeholder/128x128.svg" alt="" style="width:32px;height:32px;border-radius:50%;border:1px solid var(--border)"/>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+
+  <div class="tabs">
+    <div class="tab active">Overview</div>
+    <div class="tab">Acquisition</div>
+    <div class="tab">Behavior</div>
+  </div>
+  <div>
+    <div class="tabpanel active">
+      <div class="grid cols-3">
+        <div class="card"><h3>Sessions</h3><div data-spark="[120,132,128,150,170,165,182,190,210,220,230,240]"></div></div>
+        <div class="card"><h3>Users</h3><div data-spark="[90,95,100,110,120,125,140,150,155,160,170,180]"></div></div>
+        <div class="card"><h3>Avg. Time</h3><div data-bars="[3,4,3,5,4,6,5,6,7,6,7,8]"></div></div>
+      </div>
+    </div>
+    <div class="tabpanel">
+      <div class="grid cols-2">
+        <div class="card"><h3>Channels</h3>
+          <table class="table">
+            <thead><tr><th>Source</th><th>Sessions</th><th>Conv.</th></tr></thead>
+            <tbody><tr><td>Organic</td><td>4,321</td><td>3.2%</td></tr><tr><td>Paid</td><td>2,145</td><td>2.4%</td></tr><tr><td>Referral</td><td>980</td><td>1.2%</td></tr></tbody>
+          </table>
+        </div>
+        <div class="card"><h3>Top Pages</h3>
+          <table class="table"><thead><tr><th>URL</th><th>Views</th></tr></thead>
+          <tbody><tr><td>/</td><td>12,301</td></tr><tr><td>/pricing</td><td>5,204</td></tr><tr><td>/blog/whitespace</td><td>2,143</td></tr></tbody></table>
+        </div>
+      </div>
+    </div>
+    <div class="tabpanel">
+      <div class="card"><h3>Engagement</h3><div data-spark="[30,28,26,24,25,27,29,31,30,32,34,33]"></div></div>
+    </div>
+  </div>
+    </main>
+  </div>
+</div>
+<div class="modal"><div class="dialog">
+  <h3>Quick modal</h3>
+  <p>This is a demo modal. Click outside to close.</p>
+  <div style="display:flex; gap:8px; justify-content:flex-end">
+    <button class="btn ghost" onclick="document.querySelector('.modal').classList.remove('open')">Cancel</button>
+    <button class="btn primary" onclick="document.querySelector('.modal').classList.remove('open')">Confirm</button>
+  </div>
+</div></div>
+<script src="assets/js/main.js"></script>
+</body></html>

@@ -1,0 +1,75 @@
+/*!
+ * Mawar – Creative Portfolio & Agency HTML Template
+ * Version: 1.0.0
+ * Author: You (Exclusive to ThemeForest)
+ * Docs: ./docs/index.html
+ */
+:root{
+  --bg:#ffffff; --surface:#f8fafc; --text:#0f172a; --muted:#475569; --border:#e2e8f0;
+  --primary:#ef4444; --primary-contrast:#ffffff;
+  --accent:#0ea5e9;
+  --container: 1120px; --radius: 16px; --space: clamp(16px, 2.5vw, 28px);
+  --sans: "Plus Jakarta Sans", Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  --display: "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", serif;
+}
+:root.dark{ --bg:#0b1220; --surface:#0f172a; --text:#e5e7eb; --muted:#a1a1aa; --border:#1f2937; --primary:#f87171; --accent:#38bdf8; }
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0; font-family:var(--sans); background:var(--bg); color:var(--text); line-height:1.65}
+img{max-width:100%; display:block}
+a{color:inherit}
+.container{max-width:var(--container); margin:0 auto; padding:0 var(--space)}
+
+.header{position:sticky; top:0; z-index:60; background:rgba(255,255,255,.72); backdrop-filter: blur(10px); border-bottom:1px solid var(--border)}
+:root.dark .header{background:rgba(11,18,32,.6)}
+.header .wrap{display:flex; gap:16px; align-items:center; height:72px}
+.brand{font-family:var(--display); font-weight:800; letter-spacing:.4px; font-size:22px}
+.nav{display:flex; gap:16px; margin-left:auto; align-items:center}
+.nav a{text-decoration:none; color:var(--muted); font-weight:700}
+.nav a:hover{color:var(--text)}
+.btn{display:inline-flex; align-items:center; gap:10px; background:var(--primary); color:var(--primary-contrast); border:1px solid var(--primary); padding:12px 16px; border-radius:12px; font-weight:800; text-decoration:none}
+.btn.ghost{background:transparent; color:var(--text); border-color:var(--border)}
+
+.hero{display:grid; grid-template-columns: 1.1fr .9fr; gap:28px; padding:28px 0}
+.hero h1{font-family:var(--display); font-size: clamp(30px, 5.2vw, 64px); line-height:1.05; margin:0}
+.hero p{color:var(--muted); font-size:18px}
+@media (max-width:960px){ .hero{grid-template-columns:1fr} }
+
+.section{padding: clamp(40px, 7vw, 96px) 0}
+.grid{display:grid; gap: clamp(16px, 2.2vw, 24px)}
+.grid.cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.grid.cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:1000px){ .grid.cols-3{grid-template-columns:repeat(2,minmax(0,1fr))} }
+@media (max-width:700px){ .grid.cols-2, .grid.cols-3{grid-template-columns:1fr} }
+
+.card{background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden}
+.card .body{padding:16px}
+
+.badge{display:inline-block; border:1px solid var(--border); background:var(--surface); color:var(--muted); padding:6px 10px; border-radius:999px; font-size:12px}
+
+.footer{border-top:1px solid var(--border); padding:28px 0; color:var(--muted); margin-top:24px}
+
+.filters{display:flex; gap:10px; flex-wrap:wrap}
+.filters button{border:1px solid var(--border); background:var(--surface); padding:8px 12px; border-radius:999px; cursor:pointer; font-weight:700; color:var(--muted)}
+.filters button.active{background:var(--primary); color:var(--primary-contrast); border-color:var(--primary)}
+
+.masonry{column-count: 3; column-gap: 16px}
+@media (max-width:1000px){ .masonry{column-count:2} }
+@media (max-width:700px){ .masonry{column-count:1} }
+.tile{break-inside: avoid; margin-bottom:16px; position:relative; border-radius:16px; overflow:hidden; border:1px solid var(--border)}
+.tile .tag{position:absolute; top:10px; left:10px; background:rgba(0,0,0,.6); color:#fff; padding:6px 10px; border-radius:999px; font-size:12px}
+
+.modal{position:fixed; inset:0; background:rgba(2,6,23,.86); display:none; align-items:center; justify-content:center; z-index:70}
+.modal img{max-width:90vw; max-height:80vh; border-radius:16px; border:1px solid var(--border)}
+.modal.open{display:flex}
+
+.progress{height:10px; background:var(--surface); border-radius:99px; border:1px solid var(--border); overflow:hidden}
+.progress > span{display:block; height:100%; background:linear-gradient(90deg, var(--primary), var(--accent)); width:40%}
+
+blockquote{border-left:3px solid var(--primary); padding-left:12px; color:var(--muted)}
+
+.input, textarea, select{width:100%; border:1px solid var(--border); border-radius:12px; padding:10px 12px; background:var(--bg); color:var(--text)}
+.input:focus, textarea:focus, select:focus{outline:2px solid var(--accent); outline-offset:2px}
+.form-row{display:grid; gap:12px; grid-template-columns: 1fr 1fr}
+@media (max-width:800px){ .form-row{grid-template-columns:1fr} }

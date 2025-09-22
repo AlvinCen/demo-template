@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Kenanga – Shop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Fraunces:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css"/></head><body>
+<header class="header"><div class="container wrap">
+  <div class="brand">Kenanga</div>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="faq.html">FAQ</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <button class="iconbtn" data-theme-toggle title="Toggle theme">🌓</button>
+    <a class="btn" href="cart.html">Cart (<span data-cart-count>0</span>)</a>
+  </nav>
+</div></header>
+
+<main class="container section">
+  <div class="grid cols-2" style="grid-template-columns: 280px 1fr">
+    <aside class="filters">
+      <strong>Filters</strong>
+      <div style="margin-top:10px">
+        <label class="badge"><input type="checkbox"/> Free Shipping</label>
+        <label class="badge"><input type="checkbox"/> On Sale</label>
+      </div>
+      <div style="margin-top:10px">
+        <label>Sort</label>
+        <select class="input" id="sort">
+          <option value="pop">Most Popular</option>
+          <option value="low">Price: Low to High</option>
+          <option value="high">Price: High to Low</option>
+        </select>
+      </div>
+    </aside>
+
+    <section>
+      <div class="grid cols-3" id="grid"></div>
+    </section>
+  </div>
+</main>
+<script>
+const products = [
+  {id:'p1', name:'Everyday Tee', price:19},
+  {id:'p2', name:'Linen Shirt', price:39},
+  {id:'p3', name:'Canvas Tote', price:24},
+  {id:'p4', name:'Minimal Sneakers', price:79},
+  {id:'p5', name:'Wool Cap', price:18},
+  {id:'p6', name:'Chino Pants', price:49},
+  {id:'p7', name:'Leather Belt', price:29},
+  {id:'p8', name:'Denim Jacket', price:89},
+  {id:'p9', name:'Crew Socks (3x)', price:12}
+];
+const grid = document.getElementById('grid');
+function render(list){
+  grid.innerHTML = list.map(p=>`
+    <article class="card product">
+      <img class="thumb" src="assets/img/placeholder/600x600.svg" alt=""/>
+      <div class="body">
+        <div class="meta"><span class="stars">★★★★☆</span><span>${Math.floor(Math.random()*200)+30}</span></div>
+        <div class="title">${p.name}</div>
+        <div><span class="price">$${p.price.toFixed(2)}</span></div>
+        <div class="actions">
+          <button class="btn" data-add='${JSON.stringify({"id":"x-"+p.id,"name":p.name,"price":p.price,"image":"assets/img/placeholder/600x600.svg"})}'>Add to Cart</button>
+          <a class="btn ghost" href="product.html?id=${p.id}">Details</a>
+        </div>
+      </div>
+    </article>
+  `).join('');
+}
+render(products);
+document.getElementById('sort').addEventListener('change', (e)=>{
+  const v = e.target.value;
+  const arr = [...products];
+  if(v==='low') arr.sort((a,b)=>a.price-b.price);
+  if(v==='high') arr.sort((a,b)=>b.price-a.price);
+  render(arr);
+});
+</script>
+<footer class="footer"><div class="container">
+  <div>© 2025 Kenanga – Exclusive HTML Template for ThemeForest. · <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a></div>
+</div></footer>
+<script src="assets/js/main.js"></script>
+</body></html>

@@ -1,0 +1,1 @@
+Use Google Fonts: Plus Jakarta Sans (sans) & Playfair Display (display). Self-host if reviewer requests. No font binaries included.

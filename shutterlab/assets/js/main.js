@@ -1,0 +1,12 @@
+(function(){
+  const lb=document.querySelector('.lightbox');const lbImg=lb?.querySelector('img');
+  document.addEventListener('click',e=>{const o=e.target.closest('[data-lightbox]');if(o&&lb&&lbImg){lbImg.src=o.getAttribute('data-lightbox');lb.classList.add('open');}if(e.target.classList.contains('lightbox'))lb?.classList.remove('open');});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')lb?.classList.remove('open');});
+  document.addEventListener('click',e=>{const c=e.target.closest('.chip');if(!c)return;const group=c.parentElement.querySelectorAll('.chip');group.forEach(x=>x.classList.remove('active'));c.classList.add('active');const cat=c.getAttribute('data-cat');document.querySelectorAll('[data-cat-item]').forEach(it=>{const ok=!cat||cat==='all'||it.getAttribute('data-cat-item')===cat;it.style.display=ok?'':'none';});});
+  const KEY='sl_favs';const get=()=>JSON.parse(localStorage.getItem(KEY)||'[]');const set=v=>localStorage.setItem(KEY,JSON.stringify(v));const toggle=id=>{const s=new Set(get());s.has(id)?s.delete(id):s.add(id);set([...s]);};const isFav=id=>new Set(get()).has(id);
+  function paint(){document.querySelectorAll('[data-fav-id]').forEach(b=>{const id=b.getAttribute('data-fav-id');b.textContent=isFav(id)?'★':'☆';b.setAttribute('title',isFav(id)?'Unfavourite':'Favourite');});}
+  document.addEventListener('click',e=>{const f=e.target.closest('[data-fav-id]');if(!f)return;toggle(f.getAttribute('data-fav-id'));paint();});paint();
+  const form=document.querySelector('[data-proofing]');if(form){form.addEventListener('submit',e=>{e.preventDefault();const pass=form.querySelector('input[type=password]').value.trim();if(pass==='demo'){document.querySelector('[data-proofing-gallery]').style.display='grid';form.style.display='none';}else{alert('Wrong password (try "demo")');}});}
+  const ba=document.querySelector('.beforeafter');if(ba){const range=ba.querySelector('input[type=range]');const after=ba.querySelector('.after img');const update=()=>{const v=range.value;after.style.clipPath=`inset(0 ${100-v}% 0 0)`;};range.addEventListener('input',update);update();}
+  document.addEventListener('submit',e=>{const f=e.target.closest('[data-ajax]');if(!f)return;e.preventDefault();alert('Thanks! (Demo)');f.reset();});
+})();

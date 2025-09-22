@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Kenanga – Cart</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Fraunces:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css"/></head><body>
+<header class="header"><div class="container wrap">
+  <div class="brand">Kenanga</div>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="faq.html">FAQ</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <button class="iconbtn" data-theme-toggle title="Toggle theme">🌓</button>
+    <a class="btn" href="cart.html">Cart (<span data-cart-count>0</span>)</a>
+  </nav>
+</div></header>
+
+<body data-page="cart">
+<header class="header"><div class="container wrap">
+  <div class="brand">Kenanga</div>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="faq.html">FAQ</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <button class="iconbtn" data-theme-toggle title="Toggle theme">🌓</button>
+    <a class="btn" href="cart.html">Cart (<span data-cart-count>0</span>)</a>
+  </nav>
+</div></header>
+
+<main class="container section">
+  <h1>Shopping Cart</h1>
+  <div class="grid cols-2" style="grid-template-columns: 1fr 320px">
+    <div>
+      <table class="table">
+        <thead><tr><th>Item</th><th>Qty</th><th>Total</th><th></th></tr></thead>
+        <tbody data-cart-table></tbody>
+      </table>
+    </div>
+    <aside class="summary">
+      <h3>Summary</h3>
+      <div style="display:flex; justify-content:space-between"><span>Subtotal</span><strong data-subtotal>$0.00</strong></div>
+      <div style="display:flex; justify-content:space-between"><span>Shipping</span><span>$12.00</span></div>
+      <div style="display:flex; justify-content:space-between; margin-top:8px; font-size:18px"><span>Total</span><strong data-total>$0.00</strong></div>
+      <a class="btn" style="width:100%; margin-top:12px" href="checkout.html">Checkout</a>
+    </aside>
+  </div>
+</main>
+<script src="assets/js/main.js"></script>
+</body></html>

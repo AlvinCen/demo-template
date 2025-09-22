@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Anggrek – Components</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Figtree:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css"/></head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="brand"><span class="logo"></span> Anggrek</div>
+    <nav class="nav"><a href="dashboard.html" class=""><span>▣</span><span>Dashboard</span></a><a href="analytics.html" class=""><span>▣</span><span>Analytics</span></a><a href="tables.html" class=""><span>▣</span><span>Tables</span></a><a href="users.html" class=""><span>▣</span><span>Users</span></a><a href="forms.html" class=""><span>▣</span><span>Forms</span></a><a href="components.html" class="active"><span>▣</span><span>Components</span></a><a href="kanban.html" class=""><span>▣</span><span>Kanban</span></a><a href="settings.html" class=""><span>▣</span><span>Settings</span></a></nav>
+  </aside>
+  <div>
+    <header class="topbar">
+      <div class="wrap">
+        <button class="btn ghost" data-sidebar-toggle>☰</button>
+        <div class="search"><span>🔎</span><input placeholder="Search..."/></div>
+        <div class="actions">
+          <button class="btn ghost" data-theme-toggle>🌓</button>
+          <span class="badge">v1.0.0</span>
+          <img src="assets/img/placeholder/128x128.svg" alt="" style="width:32px;height:32px;border-radius:50%;border:1px solid var(--border)"/>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+
+  <div class="grid cols-3">
+    <div class="card">
+      <h3>Buttons</h3>
+      <div style="display:flex; gap:8px; flex-wrap:wrap">
+        <button class="btn">Default</button>
+        <button class="btn primary">Primary</button>
+        <button class="btn ghost">Ghost</button>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Badges</h3>
+      <div style="display:flex; gap:8px; flex-wrap:wrap">
+        <span class="badge">New</span><span class="badge">Beta</span><span class="badge">Pro</span>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Modal & Toast</h3>
+      <button class="btn" data-open-modal>Open Modal</button>
+      <button class="btn primary" onclick="showToast('Hello!')">Show Toast</button>
+    </div>
+  </div>
+    </main>
+  </div>
+</div>
+<div class="modal"><div class="dialog">
+  <h3>Quick modal</h3>
+  <p>This is a demo modal. Click outside to close.</p>
+  <div style="display:flex; gap:8px; justify-content:flex-end">
+    <button class="btn ghost" onclick="document.querySelector('.modal').classList.remove('open')">Cancel</button>
+    <button class="btn primary" onclick="document.querySelector('.modal').classList.remove('open')">Confirm</button>
+  </div>
+</div></div>
+<script src="assets/js/main.js"></script>
+</body></html>
