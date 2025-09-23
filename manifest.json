@@ -1,0 +1,16 @@
+{
+  "title": "DemoHub \u2014 HTML Template Gallery",
+  "items": [
+    {
+      "name": "AuroraKit HTML",
+      "slug": "aurorakit-html",
+      "path": "templates/aurorakit-html/index.html",
+      "tags": [
+        "Multipurpose",
+        "Dark Mode",
+        "Vanilla"
+      ],
+      "thumb": "_shared/placeholder-thumb.svg"
+    }
+  ]
+}

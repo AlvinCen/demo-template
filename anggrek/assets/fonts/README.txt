@@ -1,1 +1,0 @@
-Use Google Fonts: Inter (sans) + Figtree (display). Self-host if reviewer requests. No font binaries included.

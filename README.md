@@ -1,2 +1,5 @@
-# demo-template
-Live demos for 20 premium HTML templates (Nusantara, DeliGo, JobHive, MarketSquare, PersonaPro, HomeQuest, Seruni, Anggrek, DataPulse, EduSpark, Feastly, Kenanga, LaunchKit, Ledgerly, Mawar, Momentum, Voyage, WorkHive, ShutterLab, TripNest). For preview purposes only.
+
+# DemoHub (GitHub Pages Multi-Template)
+- Put templates in `templates/<slug>/` (each with its own `index.html` and local assets).
+- Update `manifest.json` to add to the hub grid.
+- `.nojekyll` allows `_shared` folder access.

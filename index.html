@@ -1,33 +1,58 @@
-﻿<!doctype html><html><head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Live Demos</title><link rel="stylesheet" href="assets/portal.css"/>
-  <link rel="stylesheet" href="../_shared/demo-polish.css" />
-</head><body><main class="container">
-<h1>Live Demos</h1><p>Select a demo below. Each opens in its own folder.</p>
-<div class="grid">
-<a class="card" href="nusantara/"><div class="badge">Landing</div><h3>Nusantara – Multipurpose Landing</h3></a>
-<a class="card" href="deligo/"><div class="badge">Food</div><h3>DeliGo – Restaurant & Food Delivery</h3></a>
-<a class="card" href="jobhive/"><div class="badge">Jobs</div><h3>JobHive – Job Board & Recruitment</h3></a>
-<a class="card" href="marketsquare/"><div class="badge">eCommerce</div><h3>MarketSquare – Multivendor Marketplace</h3></a>
-<a class="card" href="personapro/"><div class="badge">Portfolio</div><h3>PersonaPro – Personal Portfolio & Resume</h3></a>
-<a class="card" href="homequest/"><div class="badge">Real Estate</div><h3>HomeQuest – Real Estate Listings</h3></a>
-<a class="card" href="seruni/"><div class="badge">Blog</div><h3>Seruni – Blog Magazine</h3></a>
-<a class="card" href="anggrek/"><div class="badge">Dashboard</div><h3>Anggrek – Dashboard</h3></a>
-<a class="card" href="datapulse/"><div class="badge">Dashboard</div><h3>DataPulse – SaaS Analytics</h3></a>
-<a class="card" href="eduspark/"><div class="badge">Education</div><h3>EduSpark – Online Courses</h3></a>
-<a class="card" href="feastly/"><div class="badge">Food</div><h3>Feastly – Restaurant Ordering</h3></a>
-<a class="card" href="kenanga/"><div class="badge">eCommerce</div><h3>Kenanga – eCommerce</h3></a>
-<a class="card" href="launchkit/"><div class="badge">Landing</div><h3>LaunchKit – SaaS Startup</h3></a>
-<a class="card" href="ledgerly/"><div class="badge">Finance</div><h3>Ledgerly – Personal Finance</h3></a>
-<a class="card" href="mawar/"><div class="badge">Portfolio</div><h3>Mawar – Portfolio</h3></a>
-<a class="card" href="momentum/"><div class="badge">Events</div><h3>Momentum – Event & Conference</h3></a>
-<a class="card" href="voyage/"><div class="badge">Travel</div><h3>Voyage – Travel Booking</h3></a>
-<a class="card" href="workhive/"><div class="badge">Jobs</div><h3>WorkHive – Job Board</h3></a>
-<a class="card" href="shutterlab/"><div class="badge">Portfolio</div><h3>ShutterLab – Photography Portfolio</h3></a>
-<a class="card" href="tripnest/"><div class="badge">Travel</div><h3>TripNest – Travel Booking</h3></a>
-</div><div class="footer">GitHub Pages · .nojekyll included</div>
-</main>  
+
+<!doctype html><html lang="en"><head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>DemoHub — HTML Template Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0b1220;--surface:#0f172a;--card:#111827;--text:#e5e7eb;--muted:#94a3b8;--border:#1f2937;--radius:18px;--shadow:0 10px 30px rgba(2,6,23,.25)}
+    *{box-sizing:border-box}html{color-scheme:dark}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,var(--bg),#0e1626);color:var(--text)}
+    .container{width:min(1100px,92%);margin-inline:auto}
+    .nav{position:sticky;top:0;background:rgba(2,6,23,.6);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid var(--border)}
+    .row{display:flex;justify-content:space-between;align-items:center;padding:14px 0}
+    .h1{font-size:clamp(28px,4vw,48px);font-weight:800;letter-spacing:-.02em}
+    .lead{color:var(--muted)}.section{padding:48px 0}.grid{display:grid;gap:20px}
+    .grid-3{grid-template-columns:repeat(3,1fr)}@media(max-width:980px){.grid-3{grid-template-columns:1fr 1fr}}@media(max-width:640px){.grid-3{grid-template-columns:1fr}}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.01));border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+    .thumb{aspect-ratio:16/9;width:100%;object-fit:cover;background:#0b1220;border-bottom:1px solid var(--border)}
+    .pad{padding:18px}.tags{display:flex;flex-wrap:wrap;gap:8px}
+    .tag{padding:6px 10px;border-radius:999px;font-weight:600;background:rgba(34,197,94,.12);border:1px solid rgba(34,197,94,.25);color:#86efac}
+    .link{display:inline-flex;gap:8px;align-items:center;font-weight:600;color:#e5e7eb;text-decoration:none}.link:hover{opacity:.85}
+    .footer{padding:28px 0;border-top:1px solid var(--border);color:#94a3b8}.small{font-size:12px}
+  </style></head><body>
+  <nav class="nav"><div class="container row"><div>DemoHub</div><a class="link" href="index.html">Home</a></div></nav>
+  <main>
+    <section class="section"><div class="container">
+      <h1 class="h1">All Templates in One Place</h1>
+      <p class="lead">Preview every demo from a single GitHub Pages URL.</p>
+    </div></section>
+    <section class="section"><div class="container"><div id="grid" class="grid grid-3"></div></div></section>
+  </main>
+  <footer class="footer"><div class="container small">© DemoHub</div></footer>
+  <script>
+    (async()=>{
+      try{
+        const res = await fetch('manifest.json', {cache:'no-store'});
+        const data = await res.json();
+        const grid = document.getElementById('grid');
+        data.items.forEach(item=>{
+          const el = document.createElement('article'); el.className='card';
+          el.innerHTML = \`
+            <img class="thumb" src="\${item.thumb}" alt="\${item.name} preview"/>
+            <div class="pad">
+              <h3 style="margin:0 0 8px 0">\${item.name}</h3>
+              <div class="tags" style="margin-bottom:12px">
+                \${item.tags.map(t=>'<span class="tag">'+t+'</span>').join('')}
+              </div>
+              <a class="link" href="\${item.path}">Open demo →</a>
+            </div>\`;
+          grid.appendChild(el);
+        });
+      }catch(e){
+        document.getElementById('grid').innerHTML = "<p>Failed to load manifest.json</p>";
+      }
+    })();
+  </script>
 </body></html>
-
-
-

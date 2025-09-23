@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="AuroraKit — multipurpose modern HTML template for startups, SaaS, and agencies."/>
+  <meta property="og:title" content="Contact — AuroraKit"/>
+  <meta property="og:description" content="Modern, responsive, accessible HTML template."/>
+  <meta property="og:type" content="website"/>
+  <meta name="theme-color" content="#0b1220"/>
+  <title>Contact — AuroraKit — AuroraKit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css"/>
+</head>
+<body>
+  <a href="#main" class="small" style="position:absolute; left:-9999px;">Skip to content</a>
+
+  <nav class="nav">
+    <div class="container row">
+      <a href="index.html" class="flex" aria-label="AuroraKit home">
+        <img alt="AuroraKit logo" class="logo" src="assets/logo.svg"/>
+      </a>
+      <div class="menu" role="navigation" aria-label="main">
+        <a href="index.html" class="muted">Home</a>
+<a href="about.html" class="muted">About</a>
+<a href="services.html" class="muted">Services</a>
+<a href="pricing.html" class="muted">Pricing</a>
+<a href="blog.html" class="muted">Blog</a>
+<a href="contact.html" class="">Contact</a>
+      </div>
+      <div class="actions">
+        <button class="btn-outline" id="themeToggle" aria-label="Toggle theme">Theme</button>
+        <button class="btn">Get Template</button>
+        <button class="btn-outline toggle" id="navToggle" aria-label="Toggle menu">Menu</button>
+      </div>
+    </div>
+    <div id="mobileMenu" style="display:none" data-open="false">
+      <div class="container section-sm">
+        <div class="grid">
+          <a href="index.html" class="muted">Home</a>
+<a href="about.html" class="muted">About</a>
+<a href="services.html" class="muted">Services</a>
+<a href="pricing.html" class="muted">Pricing</a>
+<a href="blog.html" class="muted">Blog</a>
+<a href="contact.html" class="">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+<section class="section">
+  <div class="container">
+    <h1 class="h1">Contact</h1>
+    <p class="lead">Have questions? We’re here to help.</p>
+    <div class="grid" style="grid-template-columns:1fr 1fr; margin-top:22px">
+      <form class="card" action="#" method="POST">
+        <div class="form-row">
+          <div>
+            <label for="name">Name</label>
+            <input required id="name" name="name" class="input" placeholder="Jane Doe"/>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input required id="email" type="email" name="email" class="input" placeholder="jane@example.com"/>
+          </div>
+        </div>
+        <div style="margin-top:12px">
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" class="input" placeholder="How can we help?"/>
+        </div>
+        <div style="margin-top:12px">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" class="textarea" rows="6" placeholder="Write your message..."></textarea>
+        </div>
+        <div style="margin-top:16px">
+          <button class="btn" type="submit">Send</button>
+          <span class="small muted" style="margin-left:8px">This demo form is non-functional. Connect your handler (e.g., Formspree).</span>
+        </div>
+      </form>
+      <div class="card">
+        <h3>Support</h3>
+        <p class="muted">Email us anytime. We aim to respond within 24 hours.</p>
+        <hr/>
+        <h3>Office</h3>
+        <p class="muted">Bandung, Indonesia</p>
+        <hr/>
+        <h3>Social</h3>
+        <div class="flex">
+          <a href="#" class="btn btn-outline">Twitter</a>
+          <a href="#" class="btn btn-outline">Instagram</a>
+          <a href="#" class="btn btn-outline">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+  <footer class="footer">
+    <div class="container flex" style="justify-content:space-between; align-items:center">
+      <div class="small">© Contact · Built with AuroraKit</div>
+      <div class="badge-row">
+        <span class="badge">24/7 Support</span>
+        <span class="badge">Free Updates</span>
+        <span class="badge">Semantic HTML</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js" defer></script>
+</body>
+</html>
