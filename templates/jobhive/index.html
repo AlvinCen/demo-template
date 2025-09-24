@@ -1,29 +1,36 @@
-<!doctype html><html lang="en"><head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>JobHive</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/><link rel="stylesheet" href="styles/main.css"/>
-</head><body>
-<nav class="nav"><div class="container row">
-  <a href="index.html" aria-label="JobHive home"><img src="assets/logo.svg?v=2" class="logo" alt="JobHive"/></a>
-  <div class="menu"><a href="#features">Features</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a></div>
-  <button class="btn" id="navToggle" aria-expanded="false">Menu</button>
-</div>
-<div id="mobileMenu" hidden class="container" style="padding:12px 0"><div class="card" style="display:grid;gap:10px">
-  <a href="#features">Features</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a></div></div></nav>
-<header class="hero"><div class="bg"></div><div class="container">
-  <div class="card" style="display:inline-block;padding:8px 12px;border-radius:999px;border-color:#334155;background:rgba(255,255,255,.03)">NEW</div>
-  <h1 class="h1" style="margin:10px 0 12px">Hire faster. Work smarter.</h1>
-  <p class="lead" style="max-width:680px">A clean job board landing for startups & HR.</p>
-  <div style="margin-top:16px;display:flex;gap:12px;flex-wrap:wrap"><a class="btn primary" href="#pricing">Get Started</a><a class="btn" href="#features">See Features</a></div>
-</div></header>
-<section id="features" class="section"><div class="container"><h2 class="h1" style="font-size:28px">Features</h2><div class="grid grid-3" style="margin-top:16px"><div class="card"><h3>Company pages</h3><p class="lead" style="margin:6px 0 0 0; font-size:14px; opacity:.9">Lorem ipsum dolor sit amet.</p></div><div class="card"><h3>Smart filters</h3><p class="lead" style="margin:6px 0 0 0; font-size:14px; opacity:.9">Lorem ipsum dolor sit amet.</p></div><div class="card"><h3>Easy apply</h3><p class="lead" style="margin:6px 0 0 0; font-size:14px; opacity:.9">Lorem ipsum dolor sit amet.</p></div></div></div></section>
-<section id="pricing" class="section"><div class="container grid grid-3">
-  <div class="card"><div class="lead">Starter</div><h3 style="margin:6px 0">$0</h3><p class="lead">Try it out</p><a class="btn" href="#">Choose</a></div>
-  <div class="card" style="border-color:#334155"><div class="lead">Pro</div><h3 style="margin:6px 0">$19</h3><p class="lead">For teams</p><a class="btn primary" href="#">Choose</a></div>
-  <div class="card"><div class="lead">Enterprise</div><h3 style="margin:6px 0">Custom</h3><p class="lead">Scale up</p><a class="btn" href="#">Contact</a></div>
-</div></section>
-<section id="contact" class="section"><div class="container"><div class="card"><h3>Contact</h3><p class="lead">Email us at hello@example.com</p></div></div></section>
-<footer class="footer"><div class="container">© JobHive</div></footer>
-<script src="scripts/main.js" defer></script>
-</body></html>
+<!doctype html><html lang="en"><head><title>JobHive Pro — Premium Job Board Template</title>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/><link rel="stylesheet" href="styles/main.css"/></head>
+<body><svg aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0"><svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+<symbol id="i-bolt" viewBox="0 0 24 24"><path fill="currentColor" d="M13 3L4 14h7l-1 7 9-11h-7l1-7Z"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l8 3v6c0 5-3.5 9.74-8 11-4.5-1.26-8-6-8-11V5l8-3z"/></symbol>
+<symbol id="i-stars" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17l-5.5 3 1.5-6-4.5-4 6-.5L12 3l2.5 6.5 6 .5-4.5 4 1.5 6z"/></symbol>
+<symbol id="i-briefcase" viewBox="0 0 24 24"><path fill="currentColor" d="M9 3h6a2 2 0 012 2v2h3a2 2 0 012 2v3H1V9a2 2 0 012-2h3V5a2 2 0 012-2zm9 7v7a2 2 0 01-2 2H8a2 2 0 01-2-2v-7h12zM9 5v2h6V5H9z"/></symbol>
+<symbol id="i-map" viewBox="0 0 24 24"><path fill="currentColor" d="M15 4l-6 3-6-3v16l6 3 6-3 6 3V7l-6-3zM9 7l6-3v13l-6 3V7z"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 5h-2v6l5 3 1-1-4-2V7z"/></symbol>
+</svg></svg>
+<nav class="nav"><div class="container wrap row"><a class="row" href="index.html" style="gap:10px" aria-label="JobHive Pro home"><img src="assets/logo.svg" alt="JobHive Pro" class="logo"/></a>
+<div class="menu"><a href="#features">Features</a><a href="#jobs">Jobs</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></div>
+<div class="actions"><a class="btn" href="jobs.html">Browse Jobs</a><a class="btn primary" href="post-job.html">Post a Job</a><button class="btn" id="navToggle" aria-expanded="false">Menu</button></div></div>
+<div id="mobileMenu" hidden class="container" style="padding-bottom:12px"><div class="card" style="display:grid;gap:10px"><a href="#features">Features</a><a href="#jobs">Jobs</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></div></div></nav>
+<header class="hero"><div class="bg"></div><div class="container"><span class="tag"><svg width="16" height="16"><use href="#i-stars"/></svg> NEW v1.1</span>
+<h1 class="h1" style="margin:14px 0 12px">Hire faster. Work smarter.</h1><p class="lead" style="max-width:720px">A premium job board template with polished UI, responsive grid, and accessible patterns. Built with semantic HTML, modern CSS, and a tiny sprinkle of JS.</p>
+<div style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap"><a href="jobs.html" class="btn primary">Explore Open Roles</a><a href="#features" class="btn">See Features</a></div>
+<div style="margin-top:28px" class="brandbar"><div class="brand"><span class="dot"></span> Stripe</div><div class="brand"><span class="dot"></span> Shopify</div><div class="brand"><span class="dot"></span> DigitalOcean</div><div class="brand"><span class="dot"></span> Figma</div><div class="brand"><span class="dot"></span> Basecamp</div></div></div></header>
+<section id="features" class="section"><div class="container"><h2 class="h2">Why JobHive Pro</h2>
+<div class="grid grid-4" style="margin-top:16px"><article class="card feature"><svg width="24" height="24"><use href="#i-bolt"/></svg><div><strong>Lightning-fast</strong><p class="lead">Tiny assets, no frameworks, instant LCP.</p></div></article>
+<article class="card feature"><svg width="24" height="24"><use href="#i-shield"/></svg><div><strong>Accessible</strong><p class="lead">Proper landmarks, keyboard friendly, high contrast.</p></div></article>
+<article class="card feature"><svg width="24" height="24"><use href="#i-briefcase"/></svg><div><strong>Job-centric</strong><p class="lead">Jobs grid, filters, company pages included.</p></div></article>
+<article class="card feature"><svg width="24" height="24"><use href="#i-map"/></svg><div><strong>SEO-ready</strong><p class="lead">Semantic markup + Open Graph tags.</p></div></article></div></div></section>
+<section id="jobs" class="section"><div class="container jobgrid"><div class="card"><h3 class="h2" style="font-size:26px">Featured roles</h3>
+<div class="grid" style="margin-top:14px"><div class="job-card card"><div class="logo-mini"></div><div><strong>Senior Frontend Engineer</strong><div class="meta">Remote · $120k–$150k · React/TypeScript</div></div><a class="btn" href="job.html">View</a></div>
+<div class="job-card card"><div class="logo-mini"></div><div><strong>Product Designer</strong><div class="meta">Hybrid — Jakarta · $3k–$5k · UX/UI · Figma</div></div><a class="btn" href="job.html">View</a></div>
+<div class="job-card card"><div class="logo-mini"></div><div><strong>Backend Engineer</strong><div class="meta">Onsite — Bandung · Go/Node · PostgreSQL</div></div><a class="btn" href="job.html">View</a></div></div></div>
+<aside class="card"><h3 class="h2" style="font-size:26px">Post your job</h3><p class="lead">Reach thousands of candidates. Fast payout and simple dashboard.</p>
+<ul><li><span class="badge">48h</span> average time-to-hire</li><li>Free edits and highlight</li><li>Featured in newsletter</li></ul><a class="btn primary" href="post-job.html" style="margin-top:8px">Post a job</a></aside></div></section>
+<section id="pricing" class="section"><div class="container"><h2 class="h2">Simple pricing</h2><div class="grid pricing" style="margin-top:18px">
+<div class="card"><div class="lead">Starter</div><div class="price">$29</div><p class="lead">1 job · 14 days</p><a class="btn" href="pricing.html">Choose</a></div>
+<div class="card" style="border-color:#334155"><div class="lead">Pro</div><div class="price">$79</div><p class="lead">3 jobs + highlight</p><a class="btn primary" href="pricing.html">Choose</a></div>
+<div class="card"><div class="lead">Startup</div><div class="price">$199</div><p class="lead">Unlimited posts · 30 days</p><a class="btn" href="pricing.html">Choose</a></div></div></div></section>
+<section id="faq" class="section"><div class="container card"><h2 class="h2">FAQ</h2><dl class="faq"><dt>Is this ready for ThemeForest?</dt><dd>Yes—replace branding, add docs, and ensure licensed images if you include any photos.</dd><dt>Do you include backend?</dt><dd>No—pure HTML/CSS/JS. Hook to any backend or service.</dd><dt>Support?</dt><dd>We respond in 24 hours for bug fixes and clarifications.</dd></dl></div></section>
+<footer class="footer"><div class="container row" style="justify-content:space-between"><div class="small">© JobHive Pro</div><div class="small">v1.1 — Semantic HTML · Dark Mode · Vanilla JS</div></div></footer>
+<script src="scripts/main.js" defer></script></body></html>

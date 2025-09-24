@@ -1,1 +1,1 @@
-(function(){ const t=document.getElementById('navToggle'); const m=document.getElementById('mobileMenu'); if(t){t.addEventListener('click',()=>{m.hidden=!m.hidden})} })();
+(function(){const t=document.getElementById('navToggle');const m=document.getElementById('mobileMenu');if(t){t.addEventListener('click',()=>{m.hidden=!m.hidden;t.setAttribute('aria-expanded',String(!m.hidden));});}})();
