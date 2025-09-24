@@ -11,6 +11,56 @@
         "Vanilla"
       ],
       "thumb": "_shared/placeholder-thumb.svg"
+    },
+    {
+      "name": "JobHive",
+      "slug": "jobhive",
+      "path": "templates/jobhive/index.html",
+      "tags": [
+        "Landing",
+        "Responsive"
+      ],
+      "thumb": "_shared/placeholder-thumb.svg"
+    },
+    {
+      "name": "MarketSquare",
+      "slug": "marketsquare",
+      "path": "templates/marketsquare/index.html",
+      "tags": [
+        "Landing",
+        "Responsive"
+      ],
+      "thumb": "_shared/placeholder-thumb.svg"
+    },
+    {
+      "name": "PersonaPro",
+      "slug": "personapro",
+      "path": "templates/personapro/index.html",
+      "tags": [
+        "Landing",
+        "Responsive"
+      ],
+      "thumb": "_shared/placeholder-thumb.svg"
+    },
+    {
+      "name": "HomeQuest",
+      "slug": "homequest",
+      "path": "templates/homequest/index.html",
+      "tags": [
+        "Landing",
+        "Responsive"
+      ],
+      "thumb": "_shared/placeholder-thumb.svg"
+    },
+    {
+      "name": "Seruni",
+      "slug": "seruni",
+      "path": "templates/seruni/index.html",
+      "tags": [
+        "Landing",
+        "Responsive"
+      ],
+      "thumb": "_shared/placeholder-thumb.svg"
     }
   ]
 }
