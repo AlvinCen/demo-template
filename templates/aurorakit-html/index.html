@@ -1,1 +1,191 @@
-<h1>AuroraKit placeholder</h1>
+<!doctype html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="AuroraKit — multipurpose modern HTML template for startups, SaaS, and agencies."/>
+  <meta property="og:title" content="AuroraKit — Multipurpose HTML Template"/>
+  <meta property="og:description" content="Modern, responsive, accessible HTML template."/>
+  <meta property="og:type" content="website"/>
+  <meta name="theme-color" content="#0b1220"/>
+  <title>AuroraKit — Multipurpose HTML Template — AuroraKit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css"/>
+</head>
+<body>
+  <a href="#main" class="small" style="position:absolute; left:-9999px;">Skip to content</a>
+
+  <nav class="nav">
+    <div class="container row">
+      <a href="index.html" class="flex" aria-label="AuroraKit home">
+        <img alt="AuroraKit logo" class="logo" src="assets/logo.svg"/>
+      </a>
+      <div class="menu" role="navigation" aria-label="main">
+        <a href="index.html" class="">Home</a>
+<a href="about.html" class="muted">About</a>
+<a href="services.html" class="muted">Services</a>
+<a href="pricing.html" class="muted">Pricing</a>
+<a href="blog.html" class="muted">Blog</a>
+<a href="contact.html" class="muted">Contact</a>
+      </div>
+      <div class="actions">
+        <button class="btn-outline" id="themeToggle" aria-label="Toggle theme">Theme</button>
+        <button class="btn">Get Template</button>
+        <button class="btn-outline toggle" id="navToggle" aria-label="Toggle menu">Menu</button>
+      </div>
+    </div>
+    <div id="mobileMenu" style="display:none" data-open="false">
+      <div class="container section-sm">
+        <div class="grid">
+          <a href="index.html" class="">Home</a>
+<a href="about.html" class="muted">About</a>
+<a href="services.html" class="muted">Services</a>
+<a href="pricing.html" class="muted">Pricing</a>
+<a href="blog.html" class="muted">Blog</a>
+<a href="contact.html" class="muted">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+<section class="hero">
+  <div class="bg"></div>
+  <div class="container">
+    <div class="badge">NEW · v1.0</div>
+    <h1 class="h1" style="margin:10px 0 14px;">Sell better sites, faster.</h1>
+    <p class="lead" style="max-width:680px">AuroraKit is a polished HTML template pack that helps you ship beautiful landing pages, company sites, and blogs—without a build toolchain. Pure HTML, CSS, and a few sprinkles of JS.</p>
+    <div class="hero cta" style="margin-top:18px;">
+      <a href="pricing.html" class="btn">Buy Now</a>
+      <a href="#features" class="btn btn-outline">See Features</a>
+    </div>
+
+    <div class="metrics">
+      <div class="card">
+        <div class="muted small">Components</div>
+        <div class="h2" style="margin-top:6px">30+ blocks</div>
+      </div>
+      <div class="card">
+        <div class="muted small">Page Templates</div>
+        <div class="h2" style="margin-top:6px">6 pages</div>
+      </div>
+      <div class="card">
+        <div class="muted small">No Dependencies</div>
+        <div class="h2" style="margin-top:6px">Vanilla</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="section">
+  <div class="container">
+    <h2 class="h2">What you get</h2>
+    <p class="lead" style="margin-bottom:22px">Hand-picked sections, clean CSS, and accessible patterns.</p>
+    <div class="grid feature-grid">
+      <div class="card">
+        <h3>Responsive layout</h3>
+        <p class="muted">Grid-first layout scales from mobile to desktop with zero media-query headaches.</p>
+      </div>
+      <div class="card">
+        <h3>Dark mode</h3>
+        <p class="muted">Automatic theme toggle with <span class="kbd">localStorage</span> persistence.</p>
+      </div>
+      <div class="card">
+        <h3>SEO-ready</h3>
+        <p class="muted">Semantic markup, Open Graph tags, and clean document structure.</p>
+      </div>
+      <div class="card">
+        <h3>Utility classes</h3>
+        <p class="muted">Tiny set of utilities for spacing, grid, and flex without a framework.</p>
+      </div>
+      <div class="card">
+        <h3>Production CSS</h3>
+        <p class="muted">Commented tokens with gentle shadows and glass surfaces.</p>
+      </div>
+      <div class="card">
+        <h3>Lifetime updates</h3>
+        <p class="muted">Ship with confidence—free updates and support.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="card">
+      <div class="grid" style="grid-template-columns:1.1fr .9fr; align-items:center">
+        <div>
+          <h3 class="h2">Drop-in blocks</h3>
+          <p class="muted">Copy/paste sections across pages: hero, features, pricing, FAQ, blog grid, and more.</p>
+          <div style="margin-top:10px">
+            <a href="about.html" class="btn btn-outline">Browse Pages</a>
+          </div>
+        </div>
+        <div class="card shadow-none" style="background:#0b1220; border:1px dashed #1f2937">
+          <pre class="small"><code>&lt;section class="section"&gt;
+  &lt;div class="container grid feature-grid"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="h2">Pricing that scales with you</h2>
+    <p class="lead">Simple pricing—no surprise fees.</p>
+    <div class="grid pricing" style="margin-top:16px">
+      <div class="card">
+        <div class="muted small">Starter</div>
+        <div class="h2" style="margin:6px 0">$19</div>
+        <p class="muted">1 site, all pages</p>
+        <a href="pricing.html" class="btn" style="margin-top:12px">Get Starter</a>
+      </div>
+      <div class="card" style="border-color:#334155">
+        <div class="muted small">Standard</div>
+        <div class="h2" style="margin:6px 0">$29</div>
+        <p class="muted">3 sites, priority support</p>
+        <a href="pricing.html" class="btn" style="margin-top:12px">Get Standard</a>
+      </div>
+      <div class="card">
+        <div class="muted small">Extended</div>
+        <div class="h2" style="margin:6px 0">$49</div>
+        <p class="muted">Unlimited sites, commercial</p>
+        <a href="pricing.html" class="btn" style="margin-top:12px">Get Extended</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="h2">FAQ</h2>
+    <div class="grid" style="grid-template-columns:1fr 1fr">
+      <div class="card"><strong>Can I use this on ThemeForest?</strong><p class="muted">Yes. Replace branding, update docs and license per Envato rules.</p></div>
+      <div class="card"><strong>Are images included?</strong><p class="muted">Only SVG placeholders. Replace with your licensed images.</p></div>
+      <div class="card"><strong>Is there a build step?</strong><p class="muted">No. Works on any static host (GitHub Pages, Netlify, etc.).</p></div>
+      <div class="card"><strong>Support?</strong><p class="muted">Email/DM—response within 24 hours.</p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+  <footer class="footer">
+    <div class="container flex" style="justify-content:space-between; align-items:center">
+      <div class="small">© AuroraKit · Built with AuroraKit</div>
+      <div class="badge-row">
+        <span class="badge">24/7 Support</span>
+        <span class="badge">Free Updates</span>
+        <span class="badge">Semantic HTML</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js" defer></script>
+</body>
+</html>

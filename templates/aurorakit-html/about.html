@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="AuroraKit — multipurpose modern HTML template for startups, SaaS, and agencies."/>
+  <meta property="og:title" content="About — AuroraKit"/>
+  <meta property="og:description" content="Modern, responsive, accessible HTML template."/>
+  <meta property="og:type" content="website"/>
+  <meta name="theme-color" content="#0b1220"/>
+  <title>About — AuroraKit — AuroraKit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css"/>
+</head>
+<body>
+  <a href="#main" class="small" style="position:absolute; left:-9999px;">Skip to content</a>
+
+  <nav class="nav">
+    <div class="container row">
+      <a href="index.html" class="flex" aria-label="AuroraKit home">
+        <img alt="AuroraKit logo" class="logo" src="assets/logo.svg"/>
+      </a>
+      <div class="menu" role="navigation" aria-label="main">
+        <a href="index.html" class="muted">Home</a>
+<a href="about.html" class="">About</a>
+<a href="services.html" class="muted">Services</a>
+<a href="pricing.html" class="muted">Pricing</a>
+<a href="blog.html" class="muted">Blog</a>
+<a href="contact.html" class="muted">Contact</a>
+      </div>
+      <div class="actions">
+        <button class="btn-outline" id="themeToggle" aria-label="Toggle theme">Theme</button>
+        <button class="btn">Get Template</button>
+        <button class="btn-outline toggle" id="navToggle" aria-label="Toggle menu">Menu</button>
+      </div>
+    </div>
+    <div id="mobileMenu" style="display:none" data-open="false">
+      <div class="container section-sm">
+        <div class="grid">
+          <a href="index.html" class="muted">Home</a>
+<a href="about.html" class="">About</a>
+<a href="services.html" class="muted">Services</a>
+<a href="pricing.html" class="muted">Pricing</a>
+<a href="blog.html" class="muted">Blog</a>
+<a href="contact.html" class="muted">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+<section class="section">
+  <div class="container">
+    <h1 class="h1">About AuroraKit</h1>
+    <p class="lead">We craft delightful frontends with strong typography and clear hierarchy.</p>
+    <div class="grid" style="grid-template-columns:1fr 1fr; margin-top:22px">
+      <div class="card"><h3>Design language</h3><p class="muted">Soft shadows, rounded corners, balanced whitespace, and legible type scale.</p></div>
+      <div class="card"><h3>Accessibility</h3><p class="muted">Color-contrast friendly, keyboard navigable, and semantic landmarks.</p></div>
+      <div class="card"><h3>Performance</h3><p class="muted">Tiny CSS and minimal JS. No runtime deps.</p></div>
+      <div class="card"><h3>Maintainability</h3><p class="muted">CSS tokens and BEM-ish class names keep things tidy.</p></div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <h2 class="h2">Tech stack</h2>
+    <table class="table">
+      <tr><th>Layer</th><th>Choice</th><th>Why</th></tr>
+      <tr><td>HTML</td><td>Semantic5</td><td>SEO, readability</td></tr>
+      <tr><td>CSS</td><td>Custom properties</td><td>Theming, dark mode</td></tr>
+      <tr><td>JS</td><td>Vanilla</td><td>No deps</td></tr>
+      <tr><td>Assets</td><td>SVG</td><td>Crisp, lightweight</td></tr>
+    </table>
+  </div>
+</section>
+</main>
+
+  <footer class="footer">
+    <div class="container flex" style="justify-content:space-between; align-items:center">
+      <div class="small">© About · Built with AuroraKit</div>
+      <div class="badge-row">
+        <span class="badge">24/7 Support</span>
+        <span class="badge">Free Updates</span>
+        <span class="badge">Semantic HTML</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js" defer></script>
+</body>
+</html>
